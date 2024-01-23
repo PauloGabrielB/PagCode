@@ -1,8 +1,6 @@
 
 function Hero() {
 
-    
-
     return (
         <>
         <section className="display" id="home">

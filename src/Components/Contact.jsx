@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <>
     <section className="contact-section" id="contact">
-        <div className="container">
+        <div className="container-child">
         <h2>Entre em Contato</h2>
         <p>
           Estamos aqui para ajudar! Se tiver alguma dúvida ou se quiser discutir um projeto, sinta-se à vontade para entrar em contato conosco.

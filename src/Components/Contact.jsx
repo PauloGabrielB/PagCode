@@ -1,25 +1,90 @@
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser'
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
-export default function Contact() {
 
-    return (
-        <>
-    <section className="contact-section" id="contact">
-        <div className="container-child">
-        <h2>Entre em Contato</h2>
-        <p>
-          Estamos aqui para ajudar! Se tiver alguma dúvida ou se quiser discutir um projeto, sinta-se à vontade para entrar em contato conosco.
-        </p>
-        <div className="contact-info">
-          <p>Email: <a href="pagcode@hotmail.com">pagcode@hotmail.com</a></p>
-          <p>Telefone: (085) 991856914</p>
-          <p>
-            Siga-nos nas redes sociais:
-            <a href="https://www.instagram.com/pagcode" target="_blank" rel="noopener noreferrer"> Instagram</a>
-            <a href="https://api.whatsapp.com/send/?phone=5585991856914&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"> WhatsApp</a>
-          </p>
-        </div>
-        </div>
+function Formulario() {
+  // Declara variáveis de estado para os campos do formulário
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [mensagem, setMensagem] = useState('');
+
+  function sendEmail(e){
+    e.preventDefault();
+
+    if(nome === '' || email === '' || mensagem === ''){
+      alert('Preencha todos os campos !');
+      return;
+    }
+
+    const templateParams = {
+      from_name : nome,
+      message: mensagem,
+      email: email
+    }
+    
+    emailjs.send('service_m1ve454', 'template_hjku15w', templateParams, 'XDNdIaWb3KTwEvdIB')
+    .then((response) => {
+      console.log('Email Enviado', response.status, response.text)
+      setEmail('')
+      setMensagem('')
+      setNome('')
+    }, (err) => {
+      console.log('Erro ao Enviar', err)
+    })
+
+  }
+
+  return (
+    <>
+    <section className='Contato'>
+    <h1 className="contato-h1">Contato</h1>
+    <form className='form-container' onSubmit={sendEmail}>
+      <div>
+        <label htmlFor="nome">Nome:</label>
+        <input
+          className='nome-input'
+          type="text"
+          id="nome"
+          value={nome}
+          onChange={(event) => setNome(event.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input
+          className='email-input'
+          type="email"
+          id="email"
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+        />
+      </div>
+      <div>
+        <label htmlFor="mensagem">Mensagem:</label>
+        <textarea
+          className='textarea'
+          id="mensagem"
+          value={mensagem}
+          onChange={(event) => setMensagem(event.target.value)}
+        />
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div className="social-icons">
+        <a className='wsp-ico' href="https://api.whatsapp.com/send?phone=5585991856914" target='_blank'>
+        <FaWhatsapp /> WhatsApp 
+        </a>
+        <a className='insta-ico' href="https://www.instagram.com/pagcode" target='_blank'>
+          <FaInstagram /> Instagram
+        </a>
+      </div>
     </section>
-        </>
-    )
+    </>
+    
+    
+  );
 }
+
+export default Formulario;

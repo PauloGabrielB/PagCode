@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     font-family: Montserrat;
+    text-decoration: none;
 }
 ::-webkit-scrollbar {
     width: 0; 
@@ -72,13 +73,17 @@ ul li {
     text-align: center;
     padding: 50px 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    height: 500px;
+    margin-top: 50px;
 }
 .hero h1 {
     font-size: 36px;
     margin-bottom: 20px;
     font-family: Jost;
+}
+.container-h1 {
+  
 }
 .container-h1 h1 {
     font-size: 90px;
@@ -91,9 +96,9 @@ ul li {
     font-size: 48px;
 }
 .container-h1 p {
-    font-size: 20px;
+    font-size: 25px;
     color: #666;
-    margin-right: 140px;
+    margin-right: 20px;
     margin-top: 30px;
     line-height: 0px;
 }
@@ -111,9 +116,11 @@ ul li {
     transition: 0.5s all;
     transform: rotateX(-25deg) rotateY(20deg);
     margin-right: 450px;
-    margin-top: 90px;
+    margin-top: 90px;    
+    
   }
   .objchild {
+    margin-left: 200px;
     animation: rotate 4s infinite linear;
     transform-style: preserve-3d;
     position: absolute;
@@ -165,7 +172,7 @@ ul li {
     }
   }
 
-/* About */
+/* Sobre */
 
 .about-section {
     background-color: #f8f8f8;
@@ -177,11 +184,11 @@ ul li {
     margin: 0 auto;
   }
   .container h2 {
-    color: #333;
-    font-size: 82px;
+    font-size: 52px;
     display: flex;
     justify-content: center;
     font-family: Jost;
+    margin-bottom: 50px;
   }
   .container p {
     font-size: 18px;
@@ -190,44 +197,238 @@ ul li {
     margin-bottom: 40px;
   }
 
-  /* Contact */
+  /* Carousel */
 
-  .contact-section {
-    background-color: #fff;
-    padding: 50px 0;
-    text-align: center;
+
+.carousel-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  font-family: Jost;
+}
+
+.slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+  height: 200px;
+  margin-top: 100px;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide-track {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.slider .slide {
+  height: 150px;
+  width: 250px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  .contact-section h2 {
-    color: #333;
-    font-size: 42px;
+  100% {
+    transform: translateX(calc(-250px * 7)) translateX(-250px);
+  }
+}
+
+  /* Carousel Responsivo */
+
+  @media (max-width: 768px) {
+
+.carousel-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+}
+
+/* Projetos.css */
+
+.title-projetos {
+  display: flex;
+  justify-content: center;
+  font-family: Jost;
+  font-size: 50px;
+}
+
+.projetos-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.projeto {
+  width: 300px;
+  height: 380px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.projeto h3 {
+  color: #333;
+}
+
+.projeto p {
+  color: #666;
+}
+.img1 {
+  width: 300px;
+  height: 300px;
+  background-image: url('./Img/img1.png');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+.img2 {
+  width: 300px;
+  height: 300px;
+  background-image: url('./Img/img2.png');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+/* Projetos Responsivo */
+
+@media (max-width: 768px) {
+
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+
+  /* Contact */
+  .contato-h1 {
+    font-family: Jost;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+  }
+
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 25px;
+    text-decoration: none;
     margin-bottom: 20px;
   }
-  .contact-section p {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 40px;
+  
+  .social-icons a i {
+    vertical-align: middle;
   }
-  .contact-info p {
-    margin-bottom: 10px;
+  .wsp-ico {
+    color: green;
   }
-  .contact-info a {
-    margin-left: 10px;
-    color: #3498db;
-    text-decoration: none;
-  }
-  .contact-info a:hover {
-    text-decoration: underline;
-  }
-  .container-child h2 {
-    font-size: 52px;
-    font-weight: 600;
-    font-family: Jost;
+  .insta-ico {
+    color: #833AB4 ;
   }
   /* Footer */
 
 .dark-footer {
-    background-color: #222;
+    background-color: #fff;
     color: #9c9c9c;
     height: 40px;
     text-align: center;

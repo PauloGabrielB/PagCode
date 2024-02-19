@@ -7,8 +7,8 @@ export default function Header() {
         <h1><a href="#">PagCode</a></h1>
       <ul className="ulh">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li className="h-contact"><a href="#contact">Contact</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li className="h-contact"><a href="#contact">Contato</a></li>
       </ul>
     </nav>
 </header>

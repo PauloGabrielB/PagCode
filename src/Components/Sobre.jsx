@@ -1,7 +1,7 @@
 export default function Sobre() {
     return (
         <>
-        <section className="section-about" id="about">
+        <section className="section-about" id="sobre">
         <div className="container">
             <h2>Sobre Nós</h2>
             <p>

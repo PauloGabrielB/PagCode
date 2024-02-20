@@ -37,7 +37,7 @@ function Formulario() {
 
   return (
     <>
-    <section className='Contato'>
+    <section id='contato' className='Contato'>
     <h1 className="contato-h1">Contato</h1>
     <form className='form-container' onSubmit={sendEmail}>
       <div>
@@ -73,10 +73,10 @@ function Formulario() {
     </form>
 
     <div className="social-icons">
-        <a className='wsp-ico' href="https://api.whatsapp.com/send?phone=5585991856914" target='_blank'>
+        <a className='wsp-ico' target='blank' href="https://api.whatsapp.com/send?phone=5585991856914">
         <FaWhatsapp /> WhatsApp 
         </a>
-        <a className='insta-ico' href="https://www.instagram.com/pagcode" target='_blank'>
+        <a className='insta-ico' target='blank' href="https://www.instagram.com/pagcode">
           <FaInstagram /> Instagram
         </a>
       </div>

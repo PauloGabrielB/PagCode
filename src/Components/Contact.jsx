@@ -8,6 +8,7 @@ function Formulario() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [mensagem, setMensagem] = useState('');
+  React.useState();
 
   function sendEmail(e){
     e.preventDefault();

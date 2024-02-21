@@ -1,13 +1,13 @@
-import icon1 from '../Img/icon1.png'
-import icon2 from '../Img/icon2.png'
-import icon3 from '../Img/icon3.png'
-import icon4 from '../Img/icon4.png'
-import icon5 from '../Img/icon5.png'
-import icon6 from '../Img/icon6.png'
-import icon7 from '../Img/icon7.png'
-import icon8 from '../Img/icon8.png'
-import icon9 from '../Img/icon9.png'
-import icon10 from '../Img/icon10.png'
+import icon1 from '../img/icon1.png'
+import icon2 from '../img/icon2.png'
+import icon3 from '../img/icon3.png'
+import icon4 from '../img/icon4.png'
+import icon5 from '../img/icon5.png'
+import icon6 from '../img/icon6.png'
+import icon7 from '../img/icon7.png'
+import icon8 from '../img/icon8.png'
+import icon9 from '../img/icon9.png'
+import icon10 from '../img/icon10.png'
 
 const Slider = () => {
   const slides = [

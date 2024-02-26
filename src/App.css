@@ -299,24 +299,6 @@ a {
   }
 }
 
-  /* Carousel Responsivo */
-
-  @media (max-width: 768px) {
-
-.carousel-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-}
-
 /* Projetos.css */
 
 .title-projetos {
@@ -368,19 +350,8 @@ a {
   min-height: 100%;
 }
 
-/* Projetos Responsivo */
-
-@media (max-width: 768px) {
-
-.projetos-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-}
-
-
   /* Contact */
+
   .contato-h1 {
     font-family: Jost;
     text-align: center;
@@ -473,9 +444,7 @@ a {
   }
   
 
-/* //////////////////////////////////////////////////////// */
-
-/* Responsividade Celular */
+/* /////////////////////// Responsividade Celular ///////////////////////////////// */
 
 
 @media (max-width: 768px) {    
@@ -490,6 +459,9 @@ a {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+ ul {
+  margin: 10px;
+ }
   .logo {
     display: flex;
   }
@@ -502,28 +474,34 @@ a {
     flex-direction: column;
     margin-top: 0;
     padding-top: 0;
+    width: 100%;
+  }
+  .container-h1 {
+    margin-right: 40px;
+    margin-bottom: 0px;
   }
   .container-h1 h1 {
     margin-bottom: 0px;
-    font-size: 45px;
+    font-size: 42px;
   }
   .container-h1 h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-left: 14px;
     margin-top: 0px;
   }
   .container-h1 p {
     padding: 0;
     margin: 10px;
-    font-size: 13px;
+    font-size: 12px;
   }
   .obj {
     display: flex;
-    justify-content: center;
-    margin-left: 40px;
-    align-items: center;
     width: 20%;
-    margin-top: 50px;
+    margin-top: 70px;
+    right: 30px;
+  }
+  .objchild {
+    margin-left: 160px;
   }
   .main__action {
     margin-left: 150px;
@@ -540,6 +518,29 @@ a {
     width: 80%;
   }
 
+  /* Projetos */
+
+  .projetos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Carousel */
+
+  .carousel-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+}
   /* Contato */
 
   .form-container {
@@ -554,4 +555,3 @@ a {
   .social-icons a {
     font-size: 18px;
   }
-}

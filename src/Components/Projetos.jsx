@@ -2,7 +2,7 @@
 export default function Projetos() {
     return (
         
-        <section className="tela-toda">
+        <section id="projetos" className="tela-toda">
             <h1 className='proj-h1'>Explore Nossos Projetos: Inspire-se e Alcance o Sucesso Online!</h1>
             <p className='proj-p'>Descubra o que torna os nossos projetos web verdadeiramente excepcionais. <br /><br /> Navegue pela nossa galeria de trabalhos, cada um representando o nosso compromisso em superar expectativas e entregar resultados que geram impacto real para nossos clientes. <br /><br /> Não apenas construímos sites, criamos experiências digitais que cativam, convertem e impulsionam o sucesso dos negócios. Deixe-se inspirar e leve o seu projeto para o próximo nível conosco.</p>   
             <div className="projetos">

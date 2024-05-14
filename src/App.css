@@ -504,8 +504,8 @@ a {
 .projeto p {
   color: #666;
 }
-.projeto button {
-
+.projeto a {
+  margin-left: -10px;
 }
 .img1 {
   width: 300px;
@@ -904,19 +904,15 @@ li {
  .sh-card3 img {
   margin-left: 100px;
  }
-
  .sh-card4 h1 {
   font-size: 30px;
  }
  .sh-card4 img {
   margin-left: 100px;
  }
-
  .sh-card1 h1 {
   font-size: 30px;
  }
-
-
   /* Projetos */
 
 .projeto {
@@ -1058,8 +1054,9 @@ li {
 .desc-title {
     font-family: Poppins;
     font-size: 40px;
-    margin-left: 70px;
+    margin-left: 30px;
     text-align: start;
+    width: 250px;
 }
 
 

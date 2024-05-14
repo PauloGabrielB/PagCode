@@ -6,21 +6,21 @@ import img4 from '../img/img4.gif'
 export default function Sobre() {
     return (
         <>
-        <section className="Sobre">
+        <section id='sobre' className="Sobre">
             <h1 className='title-cards'>Quais os Benéficios de ter um Site ?</h1>
         <div className="sobre-part1">
             <div className="card1">
                 <img src={img1} alt="" />
                 <div className="card-text">
                     <h1>Presença Online</h1>
-                    <p>Na PagCode, criamos sites personalizados, dinâmicos e seguros, combinando UI/UX com a identidade visual de cada cliente. Utilizamos as melhores tecnologias para garantir desempenho e desenvolvemos uma estrutura ideal para transmitir uma comunicação para o seu público-alvo.</p>
+                    <p>Potencialize seu negócio com uma presença online impactante. Desbloqueie uma série de benefícios, desde maior visibilidade até oportunidades de crescimento, com os nossos sites personalizados para empresas. Descubra como podemos levar sua marca ao próximo nível digital.</p>
                 </div>
             </div>
             <div className="card2">
                 <img src={img2} alt="" />
                 <div className="card-text">
                     <h1>Alcance Global</h1>
-                    <p>Não apenas criamos sites excepcionais, mas também garantimos sua evolução continua. Oferecemos serviços de manutenção, alteração de layout, estrutura e conteúdo, além da implementação de novas funcionalidades, seu site sempre atualizado e alinhado com suas necessidades em constante mudança.</p>
+                    <p>Alcance o mundo inteiro com o poder da sua presença online. Nossos sites são projetados para expandir os horizontes do seu negócio, conectando-o a uma audiência global. Explore como podemos ajudá-lo a conquistar novos mercados e alcançar sucesso além das fronteiras.</p>
                 </div>
             </div>
         </div>
@@ -29,14 +29,14 @@ export default function Sobre() {
                 <img src={img3} alt="" />
             <div className="card-text">
                     <h1>Credibilidade</h1>
-                    <p>Fornecemos um serviço de hospedagem confiável, garanttindo disponibilidade e segurança em todos os acessos ao seu site. Conte conosco para manter sua presença online protegida e acessivel a qualquer momento.</p>
+                    <p>Construa credibilidade online para sua empresa. Com nossos sites profissionais e bem projetados, você pode estabelecer uma presença confiável e autêntica na internet. Descubra como nossa expertise pode fortalecer a reputação da sua marca e atrair a confiança dos seus clientes</p>
                 </div>
             </div>
             <div className="card4">
                 <img src={img4} alt="" />
                 <div className="card-text">
                     <h1>Vendas 24H</h1>
-                    <p>Nossa equipe está disponivel todos os dias úteis para atende-lo e resolver suas duvidas e problemas. Conte conosco para fornecer assistência continua e garantir que sua experiência conosco seja sempre tranquila e satisfatoria.</p>
+                    <p>Abra as portas do seu negócio para o mundo, 24 horas por dia, 7 dias por semana. Com nossos sites eficientes e responsivos, você pode estar sempre disponível para seus clientes, oferecendo produtos e serviços a qualquer hora do dia ou da noite. Descubra como podemos ajudá-lo a impulsionar suas vendas online, mesmo enquanto você dorme.</p>
                 </div>
             </div>
         </div>

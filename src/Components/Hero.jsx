@@ -4,7 +4,7 @@ export default function Hero() {
 
     return (
         <>
-        <section className="hero">
+        <section id="home" className="hero">
             
             <div className="container-h1">
                 <h1>NÓS CRIAMOS</h1>

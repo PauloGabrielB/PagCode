@@ -442,7 +442,7 @@ a {
 }
 
 .slider .slide-track {
-  animation: scroll 20s linear infinite;
+  animation: scroll 35s infinite;
   display: flex;
   width: calc(250px * 14);
 }
@@ -505,7 +505,7 @@ a {
   color: #666;
 }
 .projeto a {
-  margin-left: -10px;
+  margin-left: 0px;
 }
 .img1 {
   width: 300px;
@@ -1335,6 +1335,8 @@ li {
 .card4 p {
     margin-left: -10px;
 }
-
+.projeto a {
+  margin-left: -10px;
+}
 
 }

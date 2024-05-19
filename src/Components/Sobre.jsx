@@ -40,10 +40,18 @@ export default function Sobre() {
                 </div>
             </div>
         </div>
-        <h1 className='desc-title'>Sobre Nós</h1>
+        {/* <h1 className='desc-title'>Sobre Nós</h1>
             <div className="sobre-desc">
                 <p>A PagCode é uma empresa especializada no desenvolvimento de websites personalizados para empresas de todos os tamanhos. Nossa equipe de especialistas em design e desenvolvimento trabalha em estreita colaboração com nossos clientes para criar soluções digitais que impulsionam a presença online e o sucesso dos negócios. Combinando criatividade, expertise técnica e foco no usuário, entregamos websites de alta qualidade que destacam a marca, geram engajamento e impulsionam o crescimento.</p>
-            </div>
+            </div> */}
+             <div className="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <p>Websites personalizados para empresas de todos os tamanhos.</p>
+            <p>Soluções digitais que impulsionam o sucesso.</p>
+            <p>Design criativo, expertise técnica, foco no usuário.</p>
+            <p>Websites de alta qualidade que destacam sua marca.</p>
+            <p>Geramos engajamento e crescimento.</p>
+        </div>
         </section>
         </>
     )

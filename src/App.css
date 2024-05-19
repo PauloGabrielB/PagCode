@@ -484,6 +484,8 @@ a {
   justify-content: space-around;
   margin-top: 30px;
   margin-bottom: 100px;
+  width: 95%;
+  margin: 2.5%;
 }
 
 .projeto {
@@ -574,6 +576,86 @@ a {
   margin-top: 10px;
   margin-bottom: 80px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.explore-projetos {
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Fundo degradê inverso */
+    padding: 20px 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra mais profunda */
+    max-width: 85%; /* Largura máxima */
+    margin: 20px auto; /* Centralização horizontal */
+    text-align: center; /* Centralização do texto */
+    color: #000000; /* Cor do texto */
+    font-family: 'Orbitron', sans-serif; /* Fonte moderna */
+    position: relative; /* Para posicionamento absoluto de elementos filhos */
+    overflow: hidden; /* Para garantir que o brilho seja contido */
+    margin-top: 30px;
+}
+
+
+@keyframes shadowSlide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.explore-projetos:hover {
+    transform: scale(1.01); /* Leve aumento no hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7); /* Sombra mais intensa no hover */
+}
+
+.explore-projetos h2 {
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: darkorange; /* Cor laranja escuro do texto do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 3px; /* Espaçamento entre letras */
+    text-align: start;
+}
+
+.explore-projetos p {
+    font-size: 16px; /* Tamanho da fonte dos parágrafos */
+    color: #000000; /* Cor do texto dos parágrafos */
+    line-height: 1.6; /* Altura da linha */
+    font-weight: 600;
+    text-align: start;
+    margin: 10px 0; /* Margem vertical */
+    position: relative; /* Para permitir o efeito de brilho */
+}
+
+.explore-projetos p::before {
+    content: '◆'; /* Adiciona um ícone antes de cada parágrafo */
+    color: #ff8c00; /* Cor do ícone */
+    margin-right: 8px; /* Espaçamento à direita do ícone */
+}
+
+.explore-projetos p:hover {
+    color: darkorange; /* Cor laranja escuro no hover */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .explore-projetos {
+        padding: 20px 15px; /* Reduz o espaçamento interno em telas menores */
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .explore-projetos h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+
+    .explore-projetos p {
+        font-size: 14px; /* Reduz o tamanho da fonte dos parágrafos em telas menores */
+    }
+
+    .explore-projetos p::before {
+        margin-right: 5px; /* Ajusta o espaçamento do ícone em telas menores */
+    }
+}
 
 
   /* Contact */
@@ -613,8 +695,8 @@ a {
   }
  
   .form-container {
-    max-width: 400px;
-    height: 450px;
+    max-width: 300px;
+    height: 380px;
     margin: 0 auto;
     padding: 20px;
     margin-left: 70px;
@@ -637,35 +719,43 @@ a {
   .form-container textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     border: 1px solid #202020;
     border-radius: 4px;
     box-sizing: border-box;
     background: black;
+    color: #fff;
+  }
+  .form-label {
+    
   }
   
   .form-container textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 50px;
   }
   
   .form-container button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: darkorange;
+    color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: 600;
   }
   
   .form-container button:hover {
-    background-color: #0056b3;
+    background-color: rgb(111, 0, 255);
   }
  .form-control {
   margin-bottom: 10px;
   width: 100%;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #666;
  }
 
   .sicons {
@@ -712,13 +802,15 @@ a {
 .nav-item {
   margin-top: 10px;
 }
+
 .flinks a {
   list-style-type: none;
   font-size: 15px;
 }
 
-.flinks a:hover {
-  text-shadow: 0 0 15px;
+.nav-item a:hover {
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.39);
+  color: darkorange;
 }
 .footer-pt3 {
   margin-top: 30px;
@@ -736,7 +828,8 @@ a {
   font-weight: 600;
 }
 .footer-pt3 h2:hover {
-  text-shadow:  0 0 15px;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.39);
+  color: darkorange;
 }
 .footer-pt4 {
   margin-top: 30px;
@@ -781,7 +874,8 @@ a {
   color: #fff;
 }
 .ico2:hover {
-  filter: drop-shadow(0 0 8px #fff);
+  filter: drop-shadow(0 0 8px darkorange);
+  color: darkorange;
 }
 .dark-footer {
   background-color: #fff;
@@ -932,6 +1026,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 115%;
+  margin-left: -8%;
 }
 .proj-h1 {
   font-size: 18px;
@@ -1049,12 +1145,94 @@ li {
 .nav-bar {
     top: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.sobre-nos {
+    background: linear-gradient(135deg, #ffffff, #ffffff); /* Fundo degradê preto */
+    padding: 20px 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra mais profunda */
+    max-width: 85%; /* Largura máxima */
+    margin: 20px auto; /* Centralização horizontal */
+    text-align: center; /* Centralização do texto */
+    color: #000000; /* Cor do texto */
+    font-family: 'Orbitron', sans-serif; /* Fonte moderna */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+    position: relative; /* Para posicionamento absoluto de elementos filhos */
+    overflow: hidden; /* Para garantir que o brilho seja contido */
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360eg);
+    }
+}
+
+.sobre-nos:hover {
+    transform: scale(1.01); /* Leve aumento no hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7); /* Sombra mais intensa no hover */
+}
+
+.sobre-nos h2 {
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: rgb(111, 0, 255); /* Cor laranja escuro do texto do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    letter-spacing: 3px; /* Espaçamento entre letras */
+    text-align: start;
+}
+
+.sobre-nos p {
+    font-size: 15px; /* Tamanho da fonte dos parágrafos */
+    font-weight: 600;
+    text-align: start;
+    color: #000000; /* Cor do texto dos parágrafos */
+    line-height: 1.6; /* Altura da linha */
+    margin: 10px 0; /* Margem vertical */
+    position: relative; /* Para permitir o efeito de brilho */
+}
+
+.sobre-nos p::before {
+    content: '◆'; /* Adiciona um ícone antes de cada parágrafo */
+    color: #ff8c00; /* Cor do ícone */
+    margin-right: 8px; /* Espaçamento à direita do ícone */
+}
+
+.sobre-nos p:hover {
+    color: darkorange; /* Cor laranja escuro no hover */
+    text-shadow: 0 0 22px rgba(0, 0, 0, 0.8); /* Sombra de brilho */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .sobre-nos {
+        padding: 20px 15px; /* Reduz o espaçamento interno em telas menores */
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    }
+
+    .sobre-nos h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título em telas menores */
+    }
+
+    .sobre-nos p {
+        font-size: 14px; /* Reduz o tamanho da fonte dos parágrafos em telas menores */
+    }
+
+    .sobre-nos p::before {
+        margin-right: 5px; /* Ajusta o espaçamento do ícone em telas menores */
+    }
+}
 
 
 .desc-title {
     font-family: Poppins;
     font-size: 40px;
-    margin-left: 30px;
+    margin-left: 70px;
     text-align: start;
     width: 250px;
 }

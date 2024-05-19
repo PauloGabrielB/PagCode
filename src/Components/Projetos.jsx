@@ -1,3 +1,5 @@
+import imgcel from '../img/imgcel.png'
+
 
 export default function Projetos() {
     return (
@@ -31,8 +33,14 @@ export default function Projetos() {
             <h3>Rede Máquinas</h3>
             <p>Empresa de Locação Civil</p>
             <div className="img3"></div>
-            <a href=""><button className="btn-icons">Ver Site</button></a>
+            <a href=""><button className="btn-icons">Vesitar Site</button></a>
         </div>
+        {/* <div className="projeto">
+            <h3>Página de Links</h3>
+            <p>Cartão de Visitas</p>
+            <img className='img4' src={imgcel} alt="" />
+            <a href="https://souzaesantos.vercel.app/"><button>Vesitar Site</button></a>
+        </div> */}
         </div>
         </div>
         </section>

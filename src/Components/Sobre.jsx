@@ -13,14 +13,14 @@ export default function Sobre() {
                 <img src={img1} alt="" />
                 <div className="card-text">
                     <h1>Presença Online</h1>
-                    <p>Potencialize seu negócio com uma presença online impactante. Desbloqueie uma série de benefícios, desde maior visibilidade até oportunidades de crescimento, com os nossos sites personalizados para empresas. Descubra como podemos levar sua marca ao próximo nível digital.</p>
+                    <p>Potencialize seu negócio com uma presença online impactante. Desbloqueie uma série de benefícios, desde maior visibilidade até oportunidades de crescimento, com os nossos sites personalizados para empresas.</p>
                 </div>
             </div>
             <div className="card2">
                 <img src={img2} alt="" />
                 <div className="card-text">
                     <h1>Alcance Global</h1>
-                    <p>Alcance o mundo inteiro com o poder da sua presença online. Nossos sites são projetados para expandir os horizontes do seu negócio, conectando-o a uma audiência global. Explore como podemos ajudá-lo a conquistar novos mercados e alcançar sucesso além das fronteiras.</p>
+                    <p>Alcance o mundo inteiro com o poder da sua presença online. Nossos sites são projetados para expandir os horizontes do seu negócio, conectando-o a uma audiência global.</p>
                 </div>
             </div>
         </div>
@@ -29,14 +29,14 @@ export default function Sobre() {
                 <img src={img3} alt="" />
             <div className="card-text">
                     <h1>Credibilidade</h1>
-                    <p>Construa credibilidade online para sua empresa. Com nossos sites profissionais e bem projetados, você pode estabelecer uma presença confiável e autêntica na internet. Descubra como nossa expertise pode fortalecer a reputação da sua marca e atrair a confiança dos seus clientes</p>
+                    <p>Construa credibilidade online para sua empresa. Com nossos sites profissionais e bem projetados, você pode estabelecer uma presença confiável e autêntica na internet.</p>
                 </div>
             </div>
             <div className="card4">
                 <img src={img4} alt="" />
                 <div className="card-text">
                     <h1>Vendas 24H</h1>
-                    <p>Abra as portas do seu negócio para o mundo, 24 horas por dia, 7 dias por semana. Com nossos sites eficientes e responsivos, você pode estar sempre disponível para seus clientes, oferecendo produtos e serviços a qualquer hora do dia ou da noite. Descubra como podemos ajudá-lo a impulsionar suas vendas online, mesmo enquanto você dorme.</p>
+                    <p>Abra as portas do seu negócio para o mundo, 24 horas por dia, 7 dias por semana. Com nossos sites eficientes e responsivos, você pode estar sempre disponível para seus clientes, oferecendo produtos e serviços a qualquer hora do dia ou da noite.</p>
                 </div>
             </div>
         </div>

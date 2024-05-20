@@ -134,7 +134,6 @@ margin-right: 20px;
   margin-bottom: 5px;
   margin-left: -230px;
   margin-top: -15px;
-
 }
 
   .nav-bar {
@@ -143,6 +142,7 @@ margin-right: 20px;
       flex-direction: column;
       margin-top: -1px;
       /* margin-right: 300px; */
+      height: 60px;
   }
 
   .nav-item {
@@ -151,7 +151,7 @@ margin-right: 20px;
   }
   .mobile-menu-icon {
       display: block;
-      margin-top: 10px; /* Adicione margem superior para separar do logo */
+      margin-top: 5px; /* Adicione margem superior para separar do logo */
   }
 
   .mobile-menu-icon button {

@@ -581,7 +581,7 @@ a {
   height: 40px;
   margin-top: 0px;
   border-radius: 3px;
-  border: 1px solid;
+  border: 1px solid black;
   font-family: Poppins;
   font-weight: 600;
   font-size: 15px;
@@ -592,7 +592,6 @@ a {
 .projeto button:hover {
   background: rgb(111, 0, 255);
   color: #000000;
-  box-shadow: none;
 }
 .proj-h1 {
   font-size: 30px;
@@ -608,7 +607,7 @@ a {
 }
 
 .explore-projetos {
-    background: linear-gradient(135deg, #ffffff, #ffffff); /* Fundo degradê inverso */
+    background: transparent; /* Fundo degradê inverso */
     padding: 20px 30px; /* Espaçamento interno */
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra mais profunda */
@@ -621,7 +620,6 @@ a {
     overflow: hidden; /* Para garantir que o brilho seja contido */
     margin-top: 30px;
 }
-
 
 @keyframes shadowSlide {
     0% {
@@ -664,6 +662,7 @@ a {
 
 .explore-projetos p:hover {
     color: darkorange; /* Cor laranja escuro no hover */
+    transform: scale(1.01);
 }
 
 /* Estilos Responsivos */
@@ -709,12 +708,12 @@ a {
   }
   .sobre-rigth {
     /* margin-right: 100px; */
-    margin-left: 100px;
+    margin-left:  -0px;
   }
   .sobre-rigth img {
-    width: 30%;    
-    margin-top: 50px;
-    margin-left: 250px;
+    width: 15%;    
+    margin-top: 35px;
+    margin-left: 140px;
   }
   .rigth-p {
     color: #fff;
@@ -725,7 +724,7 @@ a {
  
   .form-container {
     max-width: 300px;
-    height: 380px;
+    height: 320px;
     margin: 0 auto;
     padding: 20px;
     margin-left: 70px;
@@ -791,7 +790,18 @@ a {
     display: flex;
     justify-content: center;
   }
-  
+  .exp {
+   width: 600px;
+  border: 1px solid #202020;
+  box-shadow: 0 6px 12px #47474785;
+  }
+  .exp:hover {
+    border: 1px solid #202020;
+  box-shadow: 0 6px 12px #47474785;
+  }
+  .exp p {
+    color: #fff;
+  }
 
   /* =========== Footer ============*/
 

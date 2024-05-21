@@ -826,7 +826,7 @@ a {
 
 
 .footer {
-  height: 250px;
+  height: 300px;
   display: flex;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   background: #000000;

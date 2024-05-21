@@ -12,7 +12,7 @@ export default function Footer() {
         <section className="footer">
               <div className='container-footer'>
             <div className="footer-pt1">
-                <img src={logo} alt="" />
+                {/* <img src={logo} alt="" /> */}
                 <p>A PagCode está comprometida com a sua implementação no mundo online.</p>
             </div>
 

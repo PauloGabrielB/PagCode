@@ -11,13 +11,15 @@ function App() {
 
   return (
     <>
-      <Header />
+    <section className='tela-toda'>
+    <Header />
       <Hero />
       <Sobre />
       <Projetos />
       <Slider />
       <Contato />
       <Footer />
+    </section> 
     </>
   )
 }

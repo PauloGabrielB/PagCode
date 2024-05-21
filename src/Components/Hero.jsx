@@ -1,4 +1,4 @@
-
+import gif from '../img/gif.gif'
 
 export default function Hero() {
 
@@ -12,9 +12,10 @@ export default function Hero() {
                 <p>Transformamos suas ideias em presença digital.</p>
             </div>
         <div className="obj">
-                <div className="objchild">
+                {/* <div className="objchild">
                     <span className="inn6"></span>
-                </div>
+                </div> */}
+                <img src={gif} alt="" />
             </div>
         </section>
         </>

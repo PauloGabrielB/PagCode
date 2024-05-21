@@ -204,22 +204,25 @@ margin-right: 20px;
 /* Hero */
 
 .hero {
-    color: #000000;
+    color: #fff;
     text-align: center;
     padding: 50px 20px;
     display: flex;
     justify-content: space-around;
-    height: 300px;
-    margin-top: 50px;
+    height: 430px;
+    margin-top: 0px;
+    background: #000000;
+    overflow: hidden;
 }
 .hero h1 {
     font-size: 36px;
     margin-bottom: 20px;
     font-family: Poppins;
 }
+
 .container-h1 h1 {
     font-size: 90px;
-    margin-top: 60px;
+    margin-top: 100px;
     line-height: 50px;
 }
 .container-h1 h2 {
@@ -262,9 +265,12 @@ margin-right: 20px;
     height: 100px;
     transform-style: preserve-3d;
     transition: 0.5s all;
-    transform: rotateX(-25deg) rotateY(20deg);
     margin-right: 450px;
-    margin-top: 90px;    
+    margin-top: 0px;    
+  }
+  .obj img {
+    width: 500px;
+    margin-top: 0px;
   }
   .objchild {
     margin-left: 200px;
@@ -619,6 +625,7 @@ a {
     position: relative; /* Para posicionamento absoluto de elementos filhos */
     overflow: hidden; /* Para garantir que o brilho seja contido */
     margin-top: 30px;
+    transition: transform 0.5s; /* Transição suave aplicada ao estado normal */
 }
 
 @keyframes shadowSlide {
@@ -967,9 +974,11 @@ li {
     flex-direction: column;
     margin-top: 0;
     padding-top: 80px;
+    height: 600px;
   }
   .container-h1 {
     margin-bottom: 0px;
+    margin-top: -250px;
   }
   .container-h1 h1 {
     margin-bottom: 0px;
@@ -984,11 +993,9 @@ li {
     margin: 10px;
     font-size: 12px;
   }
-  .obj {
-    display: flex;
-    width: 20%;
-    margin-top: 70px;
-    right: 20px;
+  .obj img {
+   width: 400%;
+   margin-left: -15%;
   }
   .objchild {
     margin-left: 160px;

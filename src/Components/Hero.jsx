@@ -12,10 +12,7 @@ export default function Hero() {
                 <p>Transformamos suas ideias em presença digital.</p>
             </div>
         <div className="obj">
-                {/* <div className="objchild">
-                    <span className="inn6"></span>
-                </div> */}
-                
+               <a href="#" class="btn-shine">Navegue ate o Formulario.</a>
             </div>
         </section>
         </>

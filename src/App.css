@@ -86,8 +86,9 @@ a {
 
 .icons-mobile {
  display: flex ;
- margin-top: 30px;
+ margin-top: 34px;
  margin-left: -90px;
+ background: black;
 }
 
 .icons-mobile a {
@@ -117,7 +118,7 @@ margin-right: 20px;
   }
   .nav-list {
       z-index: 1000;
-      background: #fff;
+      background: #000000;
       width: 100%;
       font-size: 20px;
       position: fixed;
@@ -125,6 +126,9 @@ margin-right: 20px;
       margin-left: -350px;
       display: block;
   }
+.nav-list-open ul {
+ background: red;
+}
 .nav-item a {
   color: #fff;
 }
@@ -271,6 +275,9 @@ margin-right: 20px;
   font-family: IBM+Plex+Sans;
   font-weight: 600;
   font-size: 15px;
+}
+.btn-shine {
+  display: none;
 }
 .obj {
     position: relative;
@@ -1017,6 +1024,74 @@ li {
  width: 400%;
  margin-left: -15%;
 }
+.obj a {
+  align-items: center;
+}
+.btn-shine {
+  position: absolute;
+  top: 350%;
+  left: 170%;
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
 .objchild {
   margin-left: 160px;
 }
